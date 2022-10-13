@@ -1,0 +1,157 @@
+
+<DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: Red;
+  color: black;
+}
+
+.header h1 {
+  font-size: 45px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: White;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: violet;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Akshit Tyagi</h1>
+  <p>Tere se <b>badiya</b> website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Services</a>
+  <a href="#">About</a>
+  <a href="#" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Akshit Tyagi</h2>
+    <h5>Image:</h5>
+    <div class="fakeimg" style="height:200px;"><img src="" alt="Photo nahi hai mere pas"></div>
+    <p>Kartikey bbai ye le 5 min ke andar maine tere site ki copy bana di</p>
+    <h3>Aur bata</h3>
+    <p>Tu kahe to koi aur site copy karu</p>
+    <div class="fakeimg" style="height:60px;"><img src="" alt="same condition"></div><br>
+    <div class="fakeimg" style="height:60px;"><img src="same condition" alt="same condition"></div><br>
+    <div class="fakeimg" style="height:60px;"><img src="same condition" alt="same condition"></div>
+  </div>
+  <div class="main">
+    <h>Chal Ro mat</h>
+    <h5>Bhai bas tu juth mat bola kar</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Thik hai</p>
+    <p>Baki tujhse aur kya kahu tu kuch kahne layak hai to nahi par kya karu sochta hu</p>
+    <br>
+    <h2>Tu sudhar jaye</h2>
+    <h5>But</h5>
+    <div class="fakeimg" style="height:200px;"><img src="same condition" alt="same condition"></div>
+    <p>Tu to..</p>
+    <p>Sudharne wala hai nahi par tera subhchintak hone ke rishtey se main sochta hu ki ek aakhri kosis kar hi lu </p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
